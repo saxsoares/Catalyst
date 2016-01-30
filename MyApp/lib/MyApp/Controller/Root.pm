@@ -1,4 +1,4 @@
-package Hello::Controller::Root;
+package MyApp::Controller::Root;
 use Moose;
 use namespace::autoclean;
 
@@ -14,7 +14,7 @@ __PACKAGE__->config(namespace => '');
 
 =head1 NAME
 
-Hello::Controller::Root - Root Controller for Hello
+MyApp::Controller::Root - Root Controller for MyApp
 
 =head1 DESCRIPTION
 

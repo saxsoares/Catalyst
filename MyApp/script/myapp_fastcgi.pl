@@ -1,17 +1,17 @@
 #!C:\STRAWB~1\perl\bin\perl.exe
 
 use Catalyst::ScriptRunner;
-Catalyst::ScriptRunner->run('Hello', 'FastCGI');
+Catalyst::ScriptRunner->run('MyApp', 'FastCGI');
 
 1;
 
 =head1 NAME
 
-hello_fastcgi.pl - Catalyst FastCGI
+myapp_fastcgi.pl - Catalyst FastCGI
 
 =head1 SYNOPSIS
 
-hello_fastcgi.pl [options]
+myapp_fastcgi.pl [options]
 
  Options:
    -? --help      display this help and exit
