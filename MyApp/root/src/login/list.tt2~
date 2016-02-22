@@ -1,0 +1,17 @@
+    [% META title = 'Users List' -%]
+    
+    <table>
+    <tr><th>USERNAME</th><th>SENHA</th><th>NOME</th></tr>
+    [% FOREACH user IN users -%]
+      <tr>
+        <td>[% user.username %]</td>
+        <td>[% user.senha %]</td>
+        <td>
+		[% tt_names = [ ];
+         	tt_names.push(name.fname) FOREACH name = user.names %]
+      	     	([% tt_names.size | html %])
+ 		[% tt_names.join(', ') | html %]
+	</td>
+      </tr>
+    [% END -%]
+    </table>
